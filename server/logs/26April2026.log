@@ -1,0 +1,103 @@
+{
+  "Time": "April 2026 Sunday at 12:38:55 am",
+  "Endpoint": "/products/pid/005",
+  "Method": "GET",
+  "Data": [
+    {
+      "brand": "Adidas",
+      "pid": "005",
+      "image_url": "IMG67ed10fe485d65.77802875.jpg",
+      "country_of_origin": "India",
+      "seller": "",
+      "returnable": 1,
+      "exchangeable": 1,
+      "image_1": "IMG67ed10fe485f00.48919829.jpg",
+      "image_2": "IMG67ed10fe485f38.20290991.jpg",
+      "image_3": "IMG67ed10fe485f51.01341204.jpg",
+      "image_4": "IMG67ed10fe485f74.60102962.jpg",
+      "productname": "men stylist dress",
+      "price": "1999",
+      "product_type": "suit",
+      "color": "black",
+      "gender": "men",
+      "season": "",
+      "1feature": "Fit : Slim-Fit",
+      "2feature": "Shade : Regular",
+      "3feature": "Mid-Rise : mid-rise",
+      "4feature": "Cropped : Yes, cropped",
+      "material": "90% cotton, 5% polyester, 5% elastane",
+      "care": "Machine Wash",
+      "count": "7",
+      "rating": "0"
+    }
+  ],
+  "Status": 200
+}{
+  "Time": "April 2026 Sunday at 12:40:45 am",
+  "Endpoint": "/products/pid/002",
+  "Method": "GET",
+  "Data": [
+    {
+      "brand": "Adidas",
+      "pid": "002",
+      "image_url": "IMG67ed0fd32b37e3.28706772.jpg",
+      "country_of_origin": "India",
+      "seller": "",
+      "returnable": 1,
+      "exchangeable": 1,
+      "image_1": "IMG67ed0fd32b3a92.08247770.jpg",
+      "image_2": "IMG67ed0fd32b3ab0.55728221.jpg",
+      "image_3": "IMG67ed0fd32b3ad4.83009187.jpg",
+      "image_4": "IMG67ed0fd32b3af1.20143004.jpg",
+      "productname": "women stylist dress",
+      "price": "2999",
+      "product_type": "suit",
+      "color": "black",
+      "gender": "women",
+      "season": "",
+      "1feature": "Fit : Slim-Fit",
+      "2feature": "Shade : Regular",
+      "3feature": "Mid-Rise : mid-rise",
+      "4feature": "Cropped : Yes, cropped",
+      "material": "90% cotton, 5% polyester, 5% elastane",
+      "care": "Machine Wash",
+      "count": "0",
+      "rating": "0"
+    }
+  ],
+  "Status": 200
+}{
+  "Time": "April 2026 Sunday at 12:25:33 pm",
+  "Endpoint": "/products/pid/007",
+  "Method": "GET",
+  "Data": [
+    {
+      "brand": "Adidas",
+      "pid": "007",
+      "image_url": "IMG67ed11d269ac33.97924931.jpg",
+      "country_of_origin": "India",
+      "seller": "",
+      "returnable": 1,
+      "exchangeable": 1,
+      "image_1": "IMG67ed11d269ad07.10108410.jpg",
+      "image_2": "IMG67ed11d269ad27.63170841.jpg",
+      "image_3": "IMG67ed11d269ad43.29621386.jpg",
+      "image_4": "IMG67ed11d269ad72.13484214.jpg",
+      "productname": "Women stylist dress",
+      "price": "3999",
+      "product_type": "suit",
+      "color": "black",
+      "gender": "women",
+      "season": "",
+      "1feature": "Fit : Slim-Fit",
+      "2feature": "Shade : Regular",
+      "3feature": "Mid-Rise : mid-rise",
+      "4feature": "Cropped : Yes, cropped",
+      "material": "90% cotton, 5% polyester, 5% elastane",
+      "care": "Machine Wash",
+      "count": "5",
+      "rating": "0"
+    }
+  ],
+  "Status": 200
+}

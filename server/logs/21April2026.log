@@ -1,0 +1,69 @@
+{
+  "Time": "April 2026 Tuesday at 02:05:45 am",
+  "Endpoint": "/products/pid/004",
+  "Method": "GET",
+  "Data": [
+    {
+      "brand": "Adidas",
+      "pid": "004",
+      "image_url": "IMG67ed10ecd3f0d2.65214434.jpg",
+      "country_of_origin": "India",
+      "seller": "",
+      "returnable": 1,
+      "exchangeable": 1,
+      "image_1": "IMG67ed10ecd3f1c2.11786776.jpg",
+      "image_2": "IMG67ed10ecd3f1e6.69849189.jpg",
+      "image_3": "IMG67ed10ecd3f203.11489399.jpg",
+      "image_4": "IMG67ed10ecd3f222.22917712.jpg",
+      "productname": "men stylist dress",
+      "price": "1999",
+      "product_type": "suit",
+      "color": "black",
+      "gender": "men",
+      "season": "",
+      "1feature": "Fit : Slim-Fit",
+      "2feature": "Shade : Regular",
+      "3feature": "Mid-Rise : mid-rise",
+      "4feature": "Cropped : Yes, cropped",
+      "material": "90% cotton, 5% polyester, 5% elastane",
+      "care": "Machine Wash",
+      "count": "1",
+      "rating": "0"
+    }
+  ],
+  "Status": 200
+}{
+  "Time": "April 2026 Tuesday at 02:05:55 am",
+  "Endpoint": "/products/pid/01",
+  "Method": "GET",
+  "Data": [
+    {
+      "brand": "Adidas",
+      "pid": "01",
+      "image_url": "IMG67ececf57ed6e8.90144485.jpg",
+      "country_of_origin": "India",
+      "seller": "",
+      "returnable": 1,
+      "exchangeable": 1,
+      "image_1": "IMG67ececf57ee2c8.63526470.jpg",
+      "image_2": "IMG67ececf57ee305.25591127.jpg",
+      "image_3": "IMG67ececf57ee316.14547397.jpg",
+      "image_4": "IMG67ececf57ee322.51995837.jpg",
+      "productname": "Men and Women dress",
+      "price": "1990",
+      "product_type": "bra",
+      "color": "black",
+      "gender": "men",
+      "season": "",
+      "1feature": "Fit : Slim-Fit",
+      "2feature": "Shade : Regular",
+      "3feature": "Mid-Rise : mid-rise",
+      "4feature": "Cropped : Yes, cropped",
+      "material": "90% cotton, 5% polyester, 5% elastane",
+      "care": "Machine Wash",
+      "count": "5",
+      "rating": "5"
+    }
+  ],
+  "Status": 200
+}

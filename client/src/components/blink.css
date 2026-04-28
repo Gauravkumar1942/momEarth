@@ -1,0 +1,12 @@
+.blink-status{
+    animation: blink 1s infinite alternate;
+}
+
+@keyframes blink {
+    0% {
+        color: gray;
+    }
+    100% {
+        color: green;
+    }
+}

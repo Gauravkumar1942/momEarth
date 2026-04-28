@@ -1,0 +1,35 @@
+{
+  "Time": "April 2026 Friday at 02:59:18 am",
+  "Endpoint": "/products/pid/006",
+  "Method": "GET",
+  "Data": [
+    {
+      "brand": "Adidas",
+      "pid": "006",
+      "image_url": "IMG67ed111354d591.45246772.jpg",
+      "country_of_origin": "India",
+      "seller": "",
+      "returnable": 1,
+      "exchangeable": 1,
+      "image_1": "IMG67ed111354d6b2.68267159.jpg",
+      "image_2": "IMG67ed111354d6d5.55583752.jpg",
+      "image_3": "IMG67ed111354d707.77510695.jpg",
+      "image_4": "IMG67ed111354d721.85775494.jpg",
+      "productname": "men stylist dress",
+      "price": "3999",
+      "product_type": "suit",
+      "color": "black",
+      "gender": "men",
+      "season": "",
+      "1feature": "Fit : Slim-Fit",
+      "2feature": "Shade : Regular",
+      "3feature": "Mid-Rise : mid-rise",
+      "4feature": "Cropped : Yes, cropped",
+      "material": "90% cotton, 5% polyester, 5% elastane",
+      "care": "Machine Wash",
+      "count": "7",
+      "rating": "0"
+    }
+  ],
+  "Status": 200
+}
