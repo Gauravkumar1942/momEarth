@@ -386,13 +386,14 @@ function handleSize(e){
 
 }
 
-  if (loading) return <div className='flex justify-center items-center'><Spinner  size='lg' color='blue'  /></div>;
+  if (loading) return <div className='flex justify-center items-center'><Spinner  size='lg' color='green'  /></div>;
   if (error) return  <div className='border-0 border-gray-500 rounded-2xl px-10 py-5 w-[95%] mx-auto flex justify-center items-center '><h2 className='font-ligth text-2xl text-black'>Loading Error</h2></div>;
   if (data.length === 0) return <div className='border-0 border-gray-500 rounded-2xl px-10 py-5 w-[95%] mx-auto flex justify-center items-center '><h2 className='font-ligth text-2xl text-black'>No Product Found</h2></div>;
 
   return (
     <>
-      <div className={`lg:mx-20 xl:mx-45 2xl:mx-60 3xl:mx-70 ${isBuyNowOpen ? 'pointer-events-none opacity-70' : ''} ${isBuyNowOpen ? 'pointer-events-none blur-2xl' : ''}`}>
+    <div className={` bg-green-50`}>
+      <div className={` lg:mx-20 xl:mx-45 2xl:mx-60 3xl:mx-70 ${isBuyNowOpen ? 'pointer-events-none opacity-70' : ''} ${isBuyNowOpen ? 'pointer-events-none blur-2xl' : ''}`}>
         {data.map((item) => (
           
           <div key={item.pid} className=' relative w-[95%] md:w-[99%] md:gap-1 mx-auto my-2  md:flex md:flex-row lg:flex lg:flex-row xl:flex xl:flex-row 2xl:flex 2xl:flex-row 3xl:flex 3xl:flex-row gap-3 lg:gap-5 xl:gap-10 2xl:gap-15 3xl:gap-20'>
@@ -459,7 +460,7 @@ function handleSize(e){
             </div>
 
             <div className=' lg:w-[40%] xl:w-[40%] 2xl:w-[40%] 3xl:w-[40%] md:w-[45%] md:pt-5  '>   
-                <div className='border-1 border-gray-500 my-1 rounded-2xl p-2 gap-3 flex flex-col '>
+                <div className='border-1 border-green-300 my-1 rounded-2xl p-2 gap-3 flex flex-col bg-gradient-to-r from-green-50 to-green-100'>
                   
                   <div className='flex flex-center items-center'>
                     {/* brand name and rating */}
@@ -473,20 +474,20 @@ function handleSize(e){
                   <h2 className='text-lg font-medium  mx-3  flex items-center'><IndianRupee className='font-extralight text-md' />{item.price}</h2>
                 </div>
                   
-                    <div className='border-1 border-gray-500 rounded-2xl py-2 px-5 w-full mx-auto my-3 flex flex-row justify-center items-center'>
+                    <div className='border-1 border-green-300 rounded-2xl py-2 px-5 w-full mx-auto my-3 flex flex-row justify-center items-center bg-gradient-to-r from-green-50 to-green-100'>
                       <h3 className='font-medium text-lg'>Quantity : </h3>
                       <div className='flex flex-row justify-between items-center w-[50%] max-w-xs mx-auto my-2'>
                         
-                        <Plus  onClick={() => setQuantity(prev => prev + 1)} className='cursor-pointer hover:text-blue-600 transition' />
+                        <Plus  onClick={() => setQuantity(prev => prev + 1)} className='cursor-pointer hover:text-green-600 transition' />
                           <span className='text-lg font-medium'>{quantity}</span>
-                        <Minus onClick={() => setQuantity(prev => prev > 1 ? prev - 1 : 1)} className='cursor-pointer hover:text-blue-600 transition' />
+                        <Minus onClick={() => setQuantity(prev => prev > 1 ? prev - 1 : 1)} className='cursor-pointer hover:text-green-600 transition' />
                       </div>
                       <RefreshCw className='opacity-50 cursor-pointer hover:opacity-100 transition' onClick={() => setQuantity(1)} />
                     </div>
 
                     {/* Size Container with Navigation Arrows */}
                     <div 
-                      className='border-1 border-gray-500 rounded-2xl py-2 px-0 w-full mx-auto my-3'
+                      className='border-1 border-green-300 rounded-2xl py-2 px-0 w-full mx-auto my-3 bg-gradient-to-r from-green-50 to-green-100'
                       onMouseEnter={() => setIsSizeHovered(true)}
                       onMouseLeave={() => setIsSizeHovered(false)}
                     >
@@ -501,7 +502,7 @@ function handleSize(e){
                             <div 
                               key={obj.size}
                               data-size={obj.size}
-                              className={`flex-shrink-0 ${obj.size === size ? 'bg-blue-500 border-0 text-white font-semibold ' : 'bg-transparent border-1 border-gray-400'} rounded-2xl text-black shadow-amber-100 mx-3 my-3 px-7 py-2 cursor-pointer transition duration-300 ease-in hover:scale-105`}
+                              className={`flex-shrink-0 ${obj.size === size ? 'bg-green-500 border-0 text-white font-semibold ' : 'bg-transparent border-1 border-green-500'} rounded-2xl text-black shadow-amber-100 mx-3 my-3 px-7 py-2 cursor-pointer transition duration-300 ease-in hover:scale-105`}
                             >
                               {obj.size}
                             </div>
@@ -530,7 +531,7 @@ function handleSize(e){
                       </div>
                     </div>
 
-                <div className='relative flex border-0 border-gray-500 rounded-2xl py-0 px-0 w-full mx-auto my-3'>
+                <div className='relative flex border-0 border-green-500 rounded-2xl py-0 px-0 w-full mx-auto my-3'>
                   <input 
                   placeholder='Enter Pincode'
                   inputMode='numeric'
@@ -538,7 +539,7 @@ function handleSize(e){
                   value={pincode}
                   maxLength={6}
                    
-                  className={`no-spinner w-full mx-0 my-0 border-1  ${ pincode.length === 6 ? pincodeAllowed.includes(pincode) ? 'border-1 border-green-500 bg-green-200' : 'border-1 border-red-500 bg-red-200' : 'border-1 border-gray-900'} outline-0 rounded-2xl  px-4 py-4`} />
+                  className={`no-spinner w-full mx-0 my-0 border-1  ${ pincode.length === 6 ? pincodeAllowed.includes(pincode) ? 'border-1 border-green-500 bg-gradient-to-r from-green-200 to-green-300' : 'border-1 border-red-500 bg-red-200' : 'border-1 border-gray-900'} outline-0 rounded-2xl  px-4 py-4`} />
 
                   {pincode.length === 6 && (<div className="absolute right-20 top-5">
                     <Check className= {`${ pincodeAllowed.includes(pincode) ? '' : 'hidden' } rounded-full bg-green-600 text-white font-medium size-5 p-1 `}/>
@@ -549,7 +550,7 @@ function handleSize(e){
 
                 {/*  COD  and the weather the product is Returnable or not and that is Exchangeable or Not  */}
 
-                    <div className='flex flex-col relative border-1 border-gray-500 rounded-2xl py-3 px-2 w-full mx-auto my-3 gap-3'>
+                    <div className='flex flex-col relative border-1 border-green-300 rounded-2xl py-3 px-2 w-full mx-auto my-3 gap-3 bg-gradient-to-r from-green-50 to-green-100'>
                        {/* COD  */}
                       <div className="flex flex-row items-center gap-2 mx-2">
                         <span>
@@ -617,12 +618,12 @@ function handleSize(e){
                       <div 
                         onClick={() => handleWishlist(item.pid)}
                         className={`flex items-center justify-center w-[15%]  p-4 cursor-pointer`}>
-                        {isLoading ? <Spinner size='sm' color='blue' /> : <Heart className={`${isWishlisted ? 'text-[5rem]  fill-red-800 border-0 text-red-800' : 'text-[5rem]  fill-gray-500 text-gray-500'} transition-all duration-200 hover:scale-110`} />  }
+                        {isLoading ? <Spinner size='sm' color='green' /> : <Heart className={`${isWishlisted ? 'text-[5rem]  fill-red-800 border-0 text-red-800' : 'text-[5rem]  fill-gray-500 text-gray-500'} transition-all duration-200 hover:scale-110`} />  }
                       </div>
       
                       <button
                        onClick={() => setBuyNowOpen(true)}
-                       className='flex justify-center items-center w-[60%] bg-indigo-700 hover:bg-indigo-800 text-white text-lg font-medium rounded-2xl py-3 transition-all duration-200 hover:scale-102'>
+                       className='flex justify-center items-center w-[60%] bg-green-700 hover:bg-green-800 text-white text-lg font-medium rounded-2xl py-3 transition-all duration-200 hover:scale-102'>
                         Buy Now
                       </button>
       
@@ -630,12 +631,12 @@ function handleSize(e){
                       <div
                         onClick={() => handleCart(item.pid, item.image_url, item.brand, item.productname, item.price, quantity, size)}
                         className={`flex items-center justify-center w-[15%]  p-4 cursor-pointer`}>
-                          {isCartLoading ? <Spinner size='sm' color='blue' /> : isAddedToCart ? <Trash className='text-[5rem] cursor-pointer transition-all duration-200 hover:scale-110 hover:text-red-600' /> : <ShoppingCart className='text-[5rem] cursor-pointer transition-all duration-200 hover:scale-110 hover:text-blue-600'/>} 
+                          {isCartLoading ? <Spinner size='sm' color='green' /> : isAddedToCart ? <Trash className='text-[5rem] cursor-pointer transition-all duration-200 hover:scale-110 hover:text-red-600' /> : <ShoppingCart className='text-[5rem] cursor-pointer transition-all duration-200 hover:scale-110 hover:text-green-600'/>} 
                       </div>
                     </div>
                   </div>
 
-                <div className='border-1 border-gray-500 rounded-2xl py-2 px-5 w-full mx-auto my-3'>
+                <div className='border-1 border-green-300 rounded-2xl py-2 px-5 w-full mx-auto my-3 bg-gradient-to-r from-green-50 to-green-100'>
                   <div>
                     <ul className='list-disc list-inside'>
                       <li className='py-5 font-medium' >Country of Origin: {item.country_of_origin}</li>
@@ -669,7 +670,7 @@ function handleSize(e){
 <div className={`w-[90%] mx-auto pt-20 ${isBuyNowOpen ? 'pointer-events-none blur-2xl' : ''}`}>
   <Suspense fallback={
     <div className="flex justify-center items-center py-20">
-      <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-red-600"></div>
+      <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-green-300"></div>
     </div>
   }>
     <Rating pid={pid} />
@@ -680,7 +681,7 @@ function handleSize(e){
 <div className={`w-[90%] mx-auto pt-20 ${isBuyNowOpen ? 'pointer-events-none blur-2xl' : ''}`}>
   <Suspense fallback={
     <div className="flex justify-center items-center py-20">
-      <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-red-600"></div>
+      <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-green-300"></div>
     </div>
   }>
     <Recommended detail={detail} />
@@ -690,8 +691,8 @@ function handleSize(e){
 {/* Lazy loading of Buy Now component */}
 {isBuyNowOpen && (
   <Suspense fallback={
-    <div className="fixed inset-0 flex justify-center items-center bg-black bg-opacity-50 z-50">
-      <div className="animate-spin rounded-full h-16 w-16 border-b-2 border-white"></div>
+    <div className="fixed inset-0 flex justify-center items-center bg-transparent bg-opacity-50 z-50">
+      <div className="animate-spin rounded-full h-16 w-16 border-b-2 border-green-300"></div>
     </div>
   }>
     <BuyNow 
@@ -711,7 +712,7 @@ function handleSize(e){
   </Suspense>
 )}
 
-      
+   </div>   
     </>
   );
 };

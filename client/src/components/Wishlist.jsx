@@ -215,7 +215,7 @@ const Wishlist = () => {
                       <span className='text-lg sm:text-xl font-bold text-gray-900'>
                         ₹{price}
                       </span>
-                      <span className='text-xs text-green-600 font-medium'>In Stock</span>
+                      {/* <span className='text-xs text-green-600 font-medium'>In Stock</span> */}
                     </div>
                   </div>
 

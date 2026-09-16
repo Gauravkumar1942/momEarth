@@ -481,7 +481,7 @@ const Header = () => {
                       onChange={(e) => setSearchQuery(e.target.value)}
                       placeholder='Search products...'
                       autoFocus
-                      className='w-full py-3 px-5 pr-12 bg-gray-700 text-gray-200 placeholder-gray-400 border-2 border-gray-600 rounded-full focus:outline-none focus:border-indigo-500 transition-all'
+                      className='w-full py-3 px-5 pr-12 bg-gray-700 text-gray-200 placeholder-gray-400 border-2 border-gray-600 rounded-full focus:outline-none focus:border-green-500 transition-all'
                     />
                     {searchQuery && (
                       <button
@@ -496,7 +496,7 @@ const Header = () => {
                     )}
                     <button
                       type="submit"
-                      className='absolute right-2 top-1/2 -translate-y-1/2 bg-indigo-600 hover:bg-indigo-700 p-2 rounded-full transition-colors'
+                      className='absolute right-2 top-1/2 -translate-y-1/2 bg-green-600 hover:bg-green-700 p-2 rounded-full transition-colors'
                     >
                       <Suspense fallback={<IconPlaceholder />}>
                         <Search className='text-lg' />
@@ -530,7 +530,7 @@ const Header = () => {
                 transition={{ type: 'spring', damping: 25, stiffness: 200 }}
                 className="fixed top-0 left-0 h-screen w-72 bg-white shadow-2xl z-50 flex flex-col"
               >
-                <div className='bg-gradient-to-r from-indigo-600 to-purple-600 text-white p-6 flex justify-between items-center'>
+                <div className='bg-gradient-to-r from-green-600 to-green-700 text-white p-6 flex justify-between items-center'>
                   <h2 className='text-2xl font-bold'>momE</h2>
                   <button 
                     onClick={handleSidebar}
@@ -546,9 +546,9 @@ const Header = () => {
                 {isLoggedIn ? (
                   <div className='p-6 border-b border-gray-200'>
                     <div className='flex items-center gap-3 mb-4'>
-                      <div className='w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center'>
+                      <div className='w-12 h-12 bg-green-100 rounded-full flex items-center justify-center'>
                         <Suspense fallback={<IconPlaceholder />}>
-                          <User className='text-indigo-600 text-xl' />
+                          <User className='text-green-600 text-xl' />
                         </Suspense>
                       </div>
                       <div>
@@ -558,7 +558,7 @@ const Header = () => {
                     </div>
                     <button 
                       onClick={() => navigation('/register')}
-                      className='w-full bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700 transition-colors font-medium text-sm'
+                      className='w-full bg-green-600 text-white py-2 px-4 rounded-lg hover:bg-green-700 transition-colors font-medium text-sm'
                     >
                       Change
                     </button>
@@ -568,7 +568,7 @@ const Header = () => {
                     <p className='text-gray-600 mb-3'>Welcome to momE!</p>
                     <button 
                       onClick={handleRegister}
-                      className='w-full bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700 transition-colors font-medium'
+                      className='w-full bg-green-600 text-white py-2 px-4 rounded-lg hover:bg-green-700 transition-colors font-medium'
                     >
                       Sign In / Register
                     </button>
@@ -588,7 +588,7 @@ const Header = () => {
                             onClick={() => handleNavigation(path)}
                             className={`w-full flex items-center gap-4 px-6 py-4 text-left transition-all duration-200 ${
                               isActive(path)
-                                ? 'bg-indigo-50 text-indigo-600 border-l-4 border-indigo-600'
+                                ? 'bg-green-50 text-green-600 border-l-4 border-green-600'
                                 : 'text-gray-700 hover:bg-gray-100 border-l-4 border-transparent'
                             }`}
                           >

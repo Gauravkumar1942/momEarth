@@ -156,14 +156,14 @@ const BuyNow = ({onClose, productDetails}) => {
     <>
       <AnimatePresence>
         <motion.div 
-        className={`fixed  flex flex-col justify-center items-center  left-1/2 -translate-x-1/2 border-2 border-gray-500 w-[95%] max-w-[300px]  rounded-2xl mx-auto bottom-2 h-[25rem] z-50 bg-white`}
+        className={`fixed  flex flex-col justify-center items-center  left-1/2 -translate-x-1/2 border-2 border-green-300 w-[95%] max-w-[300px]  rounded-2xl mx-auto bottom-2 h-[25rem] z-50 bg-white`}
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: 20 }}
         transition={{ type: 'spring', duration: 0.5, ease: 'easeOut' }}
         >
-          <div className='  relative border-0 border-gray-500 w-[90%] max-w-[350px]  rounded-2xl flex flex-col justify-center items-center mx-auto my-12'>
-            <X onClick={onClose} className='absolute top-1 right-1 cursor-pointer hover:text-gray-600 transition' />
+          <div className='  relative border-0 border-green-300 w-[90%] max-w-[350px]  rounded-2xl flex flex-col justify-center items-center mx-auto my-12'>
+            <X onClick={onClose} className='absolute top-1 right-1 cursor-pointer hover:text-green-600 transition' />
         
             <div className='py-5 w-[95%] mx-auto gap-1'>
 
@@ -174,12 +174,12 @@ const BuyNow = ({onClose, productDetails}) => {
                   {/* Custom Select Button */}
                   <button
                     onClick={() => setIsOpen(!isOpen)}
-                    className="w-full px-3 py-2.5 bg-white border-1 border-gray-300 rounded-xl hover:border-indigo-500 transition-all duration-200 flex items-center justify-between group focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                    className="w-full px-3 py-2.5 bg-white border-1 border-gray-300 rounded-xl hover:border-green-500 transition-all duration-200 flex items-center justify-between group focus:outline-none focus:ring-2 focus:ring-indigo-500"
                   >
                     <div className="flex items-center gap-2">
                       {selectedOption ? (
                         <>
-                          <selectedOption.icon className="w-4 h-4 text-indigo-600" />
+                          <selectedOption.icon className="w-4 h-4 text-green-600" />
                           <div className="text-left">
                             <div className="font-medium text-gray-900 text-sm">{selectedOption.label}</div>
                             <div className="text-xs text-gray-500">{selectedOption.desc}</div>
@@ -213,19 +213,19 @@ const BuyNow = ({onClose, productDetails}) => {
                               payMode === option.value ? 'bg-indigo-100' : 'bg-gray-100'
                             }`}>
                               <Icon className={`w-4 h-4 ${
-                                payMode === option.value ? 'text-indigo-600' : 'text-gray-600'
+                                payMode === option.value ? 'text-green-600' : 'text-gray-600'
                               }`} />
                             </div>
                             <div className="text-left flex-1">
                               <div className={`font-medium text-sm ${
-                                payMode === option.value ? 'text-indigo-900' : 'text-gray-900'
+                                payMode === option.value ? 'text-green-900' : 'text-gray-900'
                               }`}>
                                 {option.label}
                               </div>
                               <div className="text-xs text-gray-500">{option.desc}</div>
                             </div>
                             {payMode === option.value && (
-                              <div className="w-2 h-2 bg-indigo-600 rounded-full"></div>
+                              <div className="w-2 h-2 bg-green-600 rounded-full"></div>
                             )}
                           </button>
                         );
@@ -253,9 +253,9 @@ const BuyNow = ({onClose, productDetails}) => {
                 <h1 className='text-sm'><b>Phone</b> : {details?.phone || 'Not Available'}</h1>
                 <button
                  onClick={() => navigate('/register')}
-                 className='pt-5 flex flex-row justify-center items-center w-full font-medium text-indigo border-0 outline-0 transform transition duration-100 ease-in-out relative group'>
+                 className='pt-5 flex flex-row justify-center items-center w-full font-medium text-green border-0 outline-0 transform transition duration-100 ease-in-out relative group'>
                        Change
-                                  <span className='absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-indigo-600 group-hover:w-16 transition-all duration-300 ease-out'></span>
+                                  <span className='absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-green-600 group-hover:w-16 transition-all duration-300 ease-out'></span>
                 </button>
               </div>
               
@@ -263,8 +263,8 @@ const BuyNow = ({onClose, productDetails}) => {
               
             </div>
 
-            {payMode === 'Pay Online' ? (<button className=' w-[90%] rounded-2xl flex flex-row justify-center items-center py-3 text-white font-medium border-0 outline-0 bg-indigo-700 text-center mx-auto mb-5 transform hover:scale-102 hover:bg-indigo-800 transition duration-100 ease-in-out ' disabled={isLoading}>Check Out</button>
-              ) : (<button onClick={handleOrder} disabled={isLoading} className=' w-[90%] rounded-2xl flex flex-row justify-center items-center py-3 text-white font-medium border-0 outline-0 bg-indigo-700 text-center mx-auto mb-5 transform hover:scale-102 hover:bg-indigo-800 transition duration-100 ease-in-out disabled:opacity-50'>{isLoading ? 'Processing...' : 'Order Now'}</button>)
+            {payMode === 'Pay Online' ? (<button className=' w-[90%] rounded-2xl flex flex-row justify-center items-center py-3 text-white font-medium border-0 outline-0 bg-green-700 text-center mx-auto mb-5 transform hover:scale-102 hover:bg-green-800 transition duration-100 ease-in-out ' disabled={isLoading}>Check Out</button>
+              ) : (<button onClick={handleOrder} disabled={isLoading} className=' w-[90%] rounded-2xl flex flex-row justify-center items-center py-3 text-white font-medium border-0 outline-0 bg-green-700 text-center mx-auto mb-5 transform hover:scale-102 hover:bg-green-800 transition duration-100 ease-in-out disabled:opacity-50'>{isLoading ? 'Processing...' : 'Order Now'}</button>)
             } 
             
           </div>

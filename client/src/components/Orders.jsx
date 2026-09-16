@@ -200,7 +200,7 @@ const Orders = () => {
   );
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-100 to-green-100 py-8 px-4">
+    <div className="min-h-screen bg-gradient-to-br from-green-50 to-green-100 py-8 px-4">
       {/* Header */}
       <div className="max-w-7xl mx-auto mb-8">
         <h1 className="text-4xl font-bold text-gray-900 mb-2">My Orders</h1>
@@ -223,7 +223,7 @@ const Orders = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
-                className="bg-gradient-to-r from-green-100 to-green-200 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden"
+                className="bg-gradient-to-r from-green-50 to-green-100 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden"
               >
                 {/* Order Card */}
                 <div className="relative p-6">
@@ -327,7 +327,7 @@ const Orders = () => {
                   </div>
 
                   {/* Address */}
-                  <div className="bg-gradient-to-r from-green-100 to-green-200 rounded-xl p-3 mb-4">
+                  <div className="bg-gradient-to-r from-green-50 to-green-100 rounded-xl p-3 mb-4">
                     <div className="flex gap-2">
                       <MapPin className="w-4 h-4 text-green-900 flex-shrink-0 mt-0.5" />
                       <div className="text-xs text-gray-700 space-y-1 flex-1">
@@ -393,7 +393,7 @@ const Orders = () => {
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.9, y: 20 }}
               transition={{ type: 'spring', damping: 25, stiffness: 300 }}
-              className="fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[95%] max-w-md bg-gradient-to-r from-green-100 to-green-200 rounded-2xl shadow-2xl z-50 p-8"
+              className="fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[95%] max-w-md bg-gradient-to-r from-green-50 to-green-100 rounded-2xl shadow-2xl z-50 p-8"
             >
               <button
                 onClick={() => {setReviewBoxVisible(false); setRatingAndReview({ rating: 0, review: '' })}}
@@ -457,7 +457,7 @@ const Orders = () => {
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.9 }}
               transition={{ type: 'spring', damping: 25, stiffness: 300 }}
-              className="fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[95%] max-w-md bg-gradient-to-r from-green-100 to-green-200 rounded-2xl shadow-2xl z-50 p-8"
+              className="fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[95%] max-w-md bg-gradient-to-r from-green-50 to-green-100 rounded-2xl shadow-2xl z-50 p-8"
             >
               <button
                 onClick={() => setCancelBoxVisible(false)}
@@ -509,7 +509,7 @@ const Orders = () => {
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.9 }}
               transition={{ type: 'spring', damping: 25, stiffness: 300 }}
-              className="fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[95%] max-w-md bg-gradient-to-r from-green-100 to-green-200 rounded-2xl shadow-2xl z-50 p-8"
+              className="fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[95%] max-w-md bg-gradient-to-r from-green-50 to-green-100 rounded-2xl shadow-2xl z-50 p-8"
             >
               <button
                 onClick={() => setReturnPopUp(false)}
@@ -562,7 +562,7 @@ const Orders = () => {
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.9 }}
               transition={{ type: 'spring', damping: 25, stiffness: 300 }}
-              className="fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[95%] max-w-md bg-gradient-to-r from-green-100 to-green-200 rounded-2xl shadow-2xl z-50 p-8"
+              className="fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[95%] max-w-md bg-gradient-to-r from-green-50 to-green-100 rounded-2xl shadow-2xl z-50 p-8"
             >
               <button
                 onClick={() => setReturnExchangePopUp(false)}

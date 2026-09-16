@@ -109,7 +109,7 @@ const Rating = ({ pid }) => {
         {[...Array(5)].map((_, i) => (
           <Star
             key={i}
-            className={i < rating ? 'text-yellow-400 fill-yellow-400' : 'text-gray-300'}
+            className={i < rating ? 'text-green-400 fill-green-400' : 'text-gray-300'}
             size={16}
           />
         ))}
@@ -143,7 +143,7 @@ const Rating = ({ pid }) => {
 
   return (
     <div className='w-[95%] md:w-full mx-auto my-8'>
-      <div className='border-1 border-gray-500 rounded-2xl py-5 px-5 w-full'>
+      <div className='border-1 border-green-300 rounded-2xl py-5 px-5 w-full bg-gradient-to-r from-green-50 to-green-100'>
         <h2 className='text-2xl font-bold mb-6 mx-3'>Customer Reviews</h2>
 
         {/* Reviews Container */}
@@ -163,7 +163,7 @@ const Rating = ({ pid }) => {
               <div
                 key={index}
                 data-review
-                className='flex-shrink-0 w-full sm:w-80 bg-gradient-to-br from-gray-50 to-gray-100 border border-gray-300 rounded-2xl p-6 shadow-md hover:shadow-lg transition-shadow duration-300 snap-center'
+                className='flex-shrink-0 w-full sm:w-80 bg-gradient-to-br from-green-100 to-green-200 border border-green-300 rounded-2xl p-6 shadow-md hover:shadow-lg transition-shadow duration-300 snap-center'
               >
                 {/* User Name */}
                 <h3 className='font-semibold text-lg text-gray-800 mb-2 truncate'>
@@ -182,7 +182,7 @@ const Rating = ({ pid }) => {
 
                 {/* Rating Badge */}
                 <div className='mt-4 inline-block'>
-                  <span className='bg-blue-500 text-white text-xs font-bold rounded-full px-3 py-1'>
+                  <span className='bg-green-500 text-white text-xs font-bold rounded-full px-3 py-1'>
                     {review.rating} / 5
                   </span>
                 </div>

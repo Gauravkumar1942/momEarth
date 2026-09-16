@@ -174,7 +174,7 @@ useEffect(() => {
           <p className='text-gray-500 mb-6'>No products available for "{searched}"</p>
           <button 
             onClick={() => navigate('/')}
-            className='bg-blue-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-700 transition-colors'>
+            className='bg-green-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-green-700 transition-colors'>
             Browse All Products
           </button>
         </motion.div>
@@ -186,10 +186,10 @@ useEffect(() => {
     <>
       {loading ? (
         <div className='flex justify-center items-center min-h-[60vh]'>
-          <Spinner size='lg' color='blue' />
+          <Spinner size='lg' color='green' />
         </div>
       ) : (
-        <div className='relative px-4 sm:px-6 lg:px-10 xl:px-16 2xl:px-20 py-8'>
+        <div className='relative px-4 sm:px-6 lg:px-10 xl:px-16 2xl:px-20 py-8 bg-green-50'>
           {/* Header Section */}
           <div className='mb-8'>
             <motion.div
@@ -206,7 +206,7 @@ useEffect(() => {
                 <select
                   value={sortBy}
                   onChange={(e) => setSortBy(e.target.value)}
-                  className='px-4 py-2 border border-gray-300 rounded-lg bg-white text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer'>
+                  className='px-4 py-2 border border-gray-300 rounded-lg bg-white text-sm focus:outline-none focus:ring-2 focus:ring-green-500 cursor-pointer'>
                   <option value="default">Sort By</option>
                   <option value="priceLow">Price: Low to High</option>
                   <option value="priceHigh">Price: High to Low</option>
@@ -217,7 +217,7 @@ useEffect(() => {
                 <select
                   value={priceRange}
                   onChange={(e) => setPriceRange(e.target.value)}
-                  className='px-4 py-2 border border-gray-300 rounded-lg bg-white text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 cursor-pointer'>
+                  className='px-4 py-2 border border-gray-300 rounded-lg bg-white text-sm focus:outline-none focus:ring-2 focus:ring-green-500 cursor-pointer'>
                   <option value="all">All Prices</option>
                   <option value="under500">Under ₹500</option>
                   <option value="500-1000">₹500 - ₹1000</option>
@@ -234,15 +234,15 @@ useEffect(() => {
                 animate={{ opacity: 1, height: 'auto' }}
                 className='flex flex-wrap gap-2 mb-4'>
                 {sortBy !== 'default' && (
-                  <span className='bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm flex items-center gap-2'>
+                  <span className='bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm flex items-center gap-2'>
                     Sorted by: {sortBy === 'priceLow' ? 'Price Low-High' : sortBy === 'priceHigh' ? 'Price High-Low' : sortBy === 'rating' ? 'Rating' : 'Popularity'}
-                    <button onClick={() => setSortBy('default')} className='hover:text-blue-900'>✕</button>
+                    <button onClick={() => setSortBy('default')} className='hover:text-green-900'>✕</button>
                   </span>
                 )}
                 {priceRange !== 'all' && (
-                  <span className='bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm flex items-center gap-2'>
+                  <span className='bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm flex items-center gap-2'>
                     Price: {priceRange === 'under500' ? 'Under ₹500' : priceRange === '500-1000' ? '₹500-1000' : priceRange === '1000-2000' ? '₹1000-2000' : 'Above ₹2000'}
-                    <button onClick={() => setPriceRange('all')} className='hover:text-blue-900'>✕</button>
+                    <button onClick={() => setPriceRange('all')} className='hover:text-green-900'>✕</button>
                   </span>
                 )}
               </motion.div>
@@ -294,7 +294,7 @@ useEffect(() => {
                     {/* Rating Badge */}
                     {count > 0 && rating > 0 && (
                       <div className='absolute bottom-3 left-3 bg-white/95 backdrop-blur-sm rounded-xl px-3 py-1.5 shadow-md flex items-center gap-2'>
-                        <span className='text-xs font-semibold text-gray-800'>{rating}</span>
+                        <span className='text-xs font-semibold text-gray-800'>{Number(rating).toFixed(1)}</span>
                         <Star className='text-green-400 text-sm fill-green-400' size={15}/>
                         
                         <div className='w-px h-4 bg-gray-300'></div>
@@ -345,7 +345,7 @@ useEffect(() => {
                   <div className='lg:hidden border-t border-gray-100'>
                     <button
                       onClick={(e) => handleAddToCart(e, pid, image_url, brand, productname, price)}
-                      className='w-full py-3 text-blue-600 font-semibold text-sm flex items-center justify-center gap-2 hover:bg-blue-50 transition-colors'>
+                      className='w-full py-3 text-green-600 font-semibold text-sm flex items-center justify-center gap-2 hover:bg-green-100 transition-colors'>
                       <ShoppingCart className='text-xs' />
                       Add to Cart
                     </button>
@@ -367,7 +367,7 @@ useEffect(() => {
                   setSortBy('default');
                   setPriceRange('all');
                 }}
-                className='text-blue-600 font-semibold hover:underline'>
+                className='text-green-600 font-semibold hover:underline'>
                 Clear all filters
               </button>
             </motion.div>

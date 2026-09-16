@@ -343,7 +343,7 @@ const Cart = () => {
  const [userDetails, setUserDetails] = useState({});
 //  const sizeArr = ['XS', 'S', 'M', 'L', 'XL', 'XXL'];
  
- const quantityArr = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+ const quantityArr = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30, 31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100];
  const [paymentMethod, setPaymentMethod] = useState('');
   const [paymentDropdown, setPaymentDropdown] = useState(false);
   const [couponCode, setCouponCode] = useState('');
@@ -616,13 +616,13 @@ const Cart = () => {
   return (
     <>
       {/* Desktop & Tablet Layout */}
-      <div className='hidden md:flex relative flex-row justify-center items-start w-full min-h-screen bg-green-100 px-4 py-6 gap-6'>
+      <div className='hidden md:flex relative flex-row justify-center items-start w-full min-h-screen bg-green-50 px-4 py-6 gap-6'>
            {/* Left Side - Scrollable Cart Items */}
            <div className='w-full lg:w-[60%] xl:w-[65%] h-[calc(100vh-100px)] overflow-y-auto pr-2'>
-            <h2 className='text-2xl font-bold mb-4 sticky top-0 bg-green-100 py-2 z-10'>Shopping Cart ({data.length} items)</h2>
+            <h2 className='text-2xl font-bold mb-4 sticky top-0 bg-green-50 py-2 z-10'>Shopping Cart ({data.length} items)</h2>
             <div className='flex flex-col gap-4'>
             {Array.isArray(data) && data.map((item) => (
-              <div  data-pid={item.pid} className='relative bg-gradient-to-r from-green-100 to-green-200 border-1 border-green-300 outline-0 rounded-2xl flex flex-row justify-between items-center p-4 hover:shadow-lg transition-all duration-300 ease-in-out' key={item.pid}>
+              <div  data-pid={item.pid} className='relative bg-gradient-to-r from-green-50 to-green-100 border-1 border-green-300 outline-0 rounded-2xl flex flex-row justify-between items-center p-4 hover:shadow-lg transition-all duration-300 ease-in-out' key={item.pid}>
               
               <button
                onClick={(e) => {
@@ -814,13 +814,13 @@ const Cart = () => {
       </div>
 
       {/* Mobile & Tablet Layout */}
-      <div className='md:hidden relative flex flex-col w-full min-h-screen bg-green-100'>
+      <div className='md:hidden relative flex flex-col w-full min-h-screen bg-green-50'>
         {/* Scrollable Cart Items */}
         <div className='flex-1 overflow-y-auto px-4 py-4 pb-32'>
           <h2 className='text-xl font-bold mb-4'>Shopping Cart ({data.length})</h2>
           <div className='space-y-4'>
             {Array.isArray(data) && data.map((item) => (
-              <div  data-pid={item.pid} className='relative bg-gradient-to-r from-green-100 to-green-200 border border-gray-300 rounded-2xl p-3 shadow-sm' key={item.pid}>
+              <div  data-pid={item.pid} className='relative bg-gradient-to-r from-green-50 to-green-100 border border-green-300 rounded-2xl p-3 shadow-sm' key={item.pid}>
                 <button
                  onClick={(e) => {
                   e.stopPropagation();
@@ -862,11 +862,11 @@ const Cart = () => {
           </div>
 
           {/* Scrollable Order Summary for Mobile */}
-          <div className='mt-6 bg-gradient-to-r from-green-100 to-green-200 border rounded-2xl p-4 mb-4'>
+          <div className='mt-6 bg-gradient-to-r from-green-50 to-green-100 border rounded-2xl p-4 mb-4'>
             <h3 className='font-bold mb-3'>Order Summary</h3>
             
             {/* User Details Section Mobile */}
-            <div className='mb-4 p-3 bg-gradient-to-r from-green-100 to-green-200 border border-green-200 rounded-lg'>
+            <div className='mb-4 p-3 bg-gradient-to-r from-green-100 to-green-200 border border-green-300 rounded-lg'>
               <h4 className='text-xs font-semibold text-green-900 mb-2'>Delivery Address</h4>
               <div className='space-y-1 text-xs mb-2'>
                 <div>
@@ -943,7 +943,7 @@ const Cart = () => {
         </div>
 
         {/* Fixed Bottom Payment Bar */}
-        <div className='fixed bottom-0 left-0 right-0 bg-gradient-to-r from-green-100 to-green-200 border-t-2 shadow-lg p-4 z-40'>
+        <div className='fixed bottom-0 left-0 right-0 bg-gradient-to-r from-green-50 to-green-100 border-t-2 shadow-lg p-4 z-40'>
           <div className='flex justify-between items-center mb-3'>
             <span className='text-sm font-medium'>Total Amount:</span>
             <span className='text-xl font-bold flex items-center'><IndianRupee className='text-sm' />{total.toFixed(2)}</span>
@@ -970,7 +970,7 @@ const Cart = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: 50 }}
-              className='fixed bottom-0 left-0 right-0 bg-white border-t-2 rounded-t-3xl shadow-2xl p-6 z-50'>
+              className='fixed bottom-0 left-0 right-0 bg-gradient-to-r from-green-50 to-green-100 border-t-2 rounded-t-3xl shadow-2xl p-6 z-50'>
               <div className='flex justify-between items-center mb-4'>
                 <h3 className='font-bold text-lg'>Select Payment Method</h3>
                 <button onClick={() => setPaymentDropdown(false)}>
